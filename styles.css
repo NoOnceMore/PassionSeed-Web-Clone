@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  transition: background-color 500ms;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -33,6 +38,18 @@ h3 {
   margin: 0;
   padding: 0;
   line-height: 1;
+}
+
+.flex-hero-container a {
+  border-radius: 5px;
+  padding: 14px 32px 14px 32px;
+  background-color: #4caf4f;
+  color: #ffffff;
+}
+
+.a-custom:hover {
+  background-color: #103E13;
+  transition: background-color 500ms;
 }
 
 .kanit-regular {
@@ -139,13 +156,6 @@ h3 {
 
 .auth-items {
   color: #717171;
-}
-
-#auth-regis {
-  border-radius: 5px;
-  padding: 14px 32px 14px 32px;
-  background-color: #4caf4f;
-  color: #ffffff;
 }
 
 .hero-items-2 {
@@ -259,6 +269,12 @@ h3 {
   flex: 1;
   max-width: 300px;
   max-height: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(171, 190, 209, 0.6);
 }
 
 .card-icon {
